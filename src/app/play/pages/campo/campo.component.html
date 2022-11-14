@@ -1,0 +1,11 @@
+  <div class="imagen">
+    <p >Llévelas Aquí</p>
+    <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable size">
+  </div>
+  
+  <img 
+    class="objetos" 
+    *ngFor="let player of getMyPlayers, let i = index" 
+    src="{{ player.images.downsized_medium.url }}"
+    id= {{Ids[i]}} 
+  >  
