@@ -4,8 +4,9 @@
   </div>
   
   <img 
-    class="objetos" 
+    class="objetos"
     *ngFor="let player of getMyPlayers, let i = index" 
     src="{{ player.images.downsized_medium.url }}"
     id= {{Ids[i]}} 
+    (click)="goActivate( Ids[i] )" 
   >  
